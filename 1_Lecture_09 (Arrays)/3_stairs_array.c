@@ -3,28 +3,23 @@
 
 int main() {
 
-  int Array[N][N];
+  int array[N][N];
 
-//Filling the array
-
-  for(int index = 0; index < N; index++) {
-    for(int index_2 = 0; index_2 < N; index_2++) {
-
-//If summ of index less than diagonal of matrix put null
-
-      Array[index][index_2] = ((index + index_2) < (N - 1)) ? 0 : 1;
+  //Filling the array
+  for(int i = 0; i < N; i++) {
+    for(int j = 0; j < N; j++) {
+      //If summ of index less than diagonal of matrix put null
+      array[i][j] = ((i + j) < (N - 1)) ? 0 : 1;
     }
   }
 
-//Printing the array
-
-  for(int index = 0; index < N; index++) {
-    for(int index_2 = 0; index_2 < N; index_2++) {
-      printf("%d ", Array[index][index_2]);
+  //Printing the array
+  for(int i = 0; i < N; i++) {
+    for(int j = 0; j < N; j++) {
+      printf("%d ", array[i][j]);
     }
     printf("\n");
   }
-
 
   return 0;
 }

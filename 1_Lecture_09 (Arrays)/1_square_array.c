@@ -1,24 +1,22 @@
 #include <stdio.h>
-#define N 3               //Size of matrix
+#define N 3               //Size of array
 
 int main() {
 
-  int Matrix[N][N];
-  int Num = 1;
+  int array[N][N];
+  int num = 1;
 
-//Filling the Matrix
-
-  for(int index = 0; index < N; index++) {
-    for(int index_2 = 0; index_2 < N; index_2++) {
-      Matrix[index][index_2] = Num++;
+//Filling the array
+  for(int i = 0; i < N; i++) {
+    for(int j = 0; j < N; j++) {
+      array[i][j] = num++;
     }
   }
 
-//Printing the Matrix
-
-  for(int index = 0; index < N; index++) {
-    for(int index_2 = 0; index_2 < N; index_2++) {
-      printf("%d ", Matrix[index][index_2]);
+//Printing the array
+  for(int i = 0; i < N; i++) {
+    for(int j = 0; j < N; j++) {
+      printf("%d ", array[i][j]);
     }
     printf("\n");
   }

@@ -3,28 +3,24 @@
 
 int main() {
 
-  int Array[N];
+  int array[N];
+  int buffer = 0;
 
 //Fiiling the array
-
-  for(int index = 0; index < N; index++) {
-    scanf("%d", &Array[index]);
+  for(int i = 0; i < N; i++) {
+    scanf("%d", &array[i]);
   }
 
-//Replace the array element's
-
-  int buffer;
-
-  for(int index = 0; index < N/2; index++) {
-    buffer = Array[index];
-    Array[index] = Array[N - 1 - index];
-    Array[N - 1 - index] = buffer;
+//Replace the arrays' element's
+  for(int i = 0; i < (N / 2); i++) {
+    buffer = array[i];
+    array[i] = array[N - 1 - i];
+    array[N - 1 - i] = buffer;
   }
 
 //Printing the array
-
-  for(int index = 0; index < N; index++) {
-    printf("%d ", Array[index]);
+  for(int i = 0; i < N; i++) {
+    printf("%d ", array[i]);
   }
   printf("\n"); 
 
