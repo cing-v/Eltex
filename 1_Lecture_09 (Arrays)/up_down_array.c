@@ -39,10 +39,10 @@ int main() {
     // Upside-down printing the Matrix
     for(int i = 0, n = N - 1; i < N; i++, n--) {
         for(int j = 0; j < N; j++) {
-            // if the column is odd (нечётная)
+            // if the column is odd (нечётный столбец)
             if(j % 2) {
                 printf("%2d ", array[j][n]);
-            // if the colunm is even (чётная)
+            // if the colunm is even (чётный столбец)
             } else {
                 printf("%2d ", array[j][i]);
             }
